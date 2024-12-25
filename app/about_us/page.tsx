@@ -1,10 +1,10 @@
-import Products from '@/components/ProductComponent/ProductCard'
+import AboutPage from '@/components/AboutComponent/About'
 import React from 'react'
 
 function page() {
   return (
     <div>
-        <Products />
+        <AboutPage/>
     </div>
   )
 }

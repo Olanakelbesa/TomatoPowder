@@ -1,15 +1,17 @@
-import Image from "next/image";
 import React from "react";
-import banner from "@/public/images/Layer.png";
+import banner from "@/public/images/banner3.png";
 import TestimonialCarousel from "./Testimonials";
 import Feature from "./Feature";
 
 function Home() {
 	return (
 		<div>
-			<div className="flex flex-col md:flex-row h-screen bg-red-100">
+			<div
+				className="flex flex-col md:flex-row h-screen bg-cover bg-center bg-no-repeat"
+				style={{ backgroundImage: `url(${banner.src})` }}
+			>
 				{/* Text Section */}
-				<div className="flex flex-col justify-center items-start px-8 md:px-16 lg:px-24 w-full md:w-1/2">
+				<div className="flex flex-col justify-center items-start px-8 md:px-16 lg:px-24 w-full md:w-1/2  ">
 					<h1 className="text-4xl md:text-6xl font-bold text-red-700 mb-4">
 						Fresh, Pure, and Versatile Tomato Powder Delivered to Your Door!
 					</h1>
@@ -26,20 +28,9 @@ function Home() {
 						</button>
 					</div>
 				</div>
-
-				{/* Image Section */}
-				<div className="w-[80%] md:w-1/2 h-[50vh] md:h-full relative">
-					<Image
-						src={banner}
-						alt="Tomato Powder Banner"
-						layout="fill"
-						objectFit="cover"
-						className="rounded-t-lg md:rounded-none"
-					/>
-				</div>
 			</div>
 			<Feature />
-            <TestimonialCarousel />
+			<TestimonialCarousel />
 		</div>
 	);
 }

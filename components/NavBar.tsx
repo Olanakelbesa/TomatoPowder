@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function NavBar() {
 	return (
-		<div className="flex flex-wrap items-center justify-between py-2 px-6 md:px-20 bg-[#dfe3e8] shadow-md ">
+		<div className="flex flex-wrap items-center justify-between py-3 px-6 md:px-20 bg-[#dfe3e8] shadow-md ">
 			{/* Logo Section */}
 			<Link href={"/"} className="flex gap-2 items-center">
 				<Image src={logo} alt="logo" width={40} height={40} />
@@ -19,7 +19,7 @@ function NavBar() {
 				<Link href={"/"} className="hover:text-[#d52127]">
 					Home
 				</Link>
-				<Link href={"/about"} className="hover:text-[#d52127]">
+				<Link href={"/about_us"} className="hover:text-[#d52127]">
 					About
 				</Link>
 				<Link href={"/products"} className="hover:text-[#d52127]">
@@ -32,12 +32,11 @@ function NavBar() {
 
 			{/* Buttons */}
 			<div className="flex gap-2 md:gap-4 mt-2 md:mt-0">
-				<button className="bg-[#d52127] text-white px-3 py-1 rounded-xl flex items-center font-semibold text-sm md:text-base">
-					Login
-				</button>
-				<button className="border-2 border-solid border-[#d52127] rounded-xl py-1 px-3 text-[#d52127] flex items-center font-semibold text-sm md:text-base">
-					SignUp
-				</button>
+				<Link href={"./shop"}>
+					<button className="border-2 border-solid border-[#d52127] rounded-3xl py-1 px-4 text-[#d52127] hover:text-red-800 hover:border-red-800 flex items-center font-semibold text-sm md:text-base">
+						Shop
+					</button>
+				</Link>
 			</div>
 		</div>
 	);

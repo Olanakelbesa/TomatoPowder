@@ -1,8 +1,8 @@
-import testimonial1Img from "@/public/images/banner.png";
-import testimonial2Img from "@/public/images/banner.png";
-import testimonial3Img from "@/public/images/banner.png";
-import testimonial4Img from "@/public/images/banner.png";
-import testimonial5Img from "@/public/images/banner.png";
+import testimonial1Img from "@/public/images/testimony/89eabcb3-83e7-4188-9e8e-4be7e37015e5.jpg";
+import testimonial2Img from "@/public/images/testimony/Premium Photo _ Black man posing with vinyls.jpg";
+import testimonial3Img from "@/public/images/testimony/SISTEC - Rebranding - Vicente Campos.jpg";
+import testimonial4Img from "@/public/images/testimony/e06a183b-8f92-41ad-8361-6a995b6e1a7d.jpg";
+import testimonial5Img from "@/public/images/testimony/📱 Self-Development App.jpg";
 
 export const testimonials = [
     {
