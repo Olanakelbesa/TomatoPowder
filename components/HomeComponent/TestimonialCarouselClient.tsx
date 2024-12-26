@@ -35,7 +35,7 @@ const TestimonialCarouselClient = () => {
                     {testimonials.map((testimonial, index) => (
                         <div
                             key={index}
-                            className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8"
+                            className="flex flex-col items-center bg-[#fef8f8] shadow-lg rounded-lg p-8"
                         >
                             <div className="w-20 h-20 mb-4">
                                 <Image

@@ -6,7 +6,7 @@ import Link from "next/link";
 function Footer() {
 	return (
 		<div>
-			<div className="bg-[#dfe3e8] flex justify-evenly h-[30vh]">
+			<div className="bg-[#fef8f8] flex justify-evenly h-[30vh]">
 				<div className="flex flex-col justify-center text-gray-500 text-sm ">
 					<Image
 						src={logo}

@@ -12,7 +12,7 @@ function Feature() {
 				{features.map((feature, index) => (
 					<div
 						key={index}
-						className="flex flex-col items-center text-center bg-white shadow-md rounded-lg p-6"
+						className="flex flex-col items-center text-center bg-[#fef8f8] shadow-md rounded-lg p-6"
 					>
 						<Image
 							src={feature.image}

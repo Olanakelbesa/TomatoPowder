@@ -33,7 +33,7 @@ const AboutPage = () => {
 				<h2 className="text-3xl font-bold text-center mb-8">Why Choose Us?</h2>
 				<div className="max-w-5xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 					{/* Card 1 */}
-					<div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+					<div className="bg-[#fef8f8] p-6 rounded-lg shadow hover:shadow-lg transition">
 						<Image
 							src="/images/about/farmer1.jpg" // Replace with your actual image path
 							alt="Locally sourced ingredients"
@@ -52,7 +52,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Card 2 */}
-					<div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+					<div className="bg-[#fef8f8] p-6 rounded-lg shadow hover:shadow-lg transition">
 						<Image
 							src={packaging} // Replace with your actual image path
 							alt="Eco-friendly packaging"
@@ -72,7 +72,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Card 3 */}
-					<div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+					<div className="bg-[#fef8f8] p-6 rounded-lg shadow hover:shadow-lg transition">
 						<Image
 							src="/images/about/download.jpg" // Replace with your actual image path
 							alt="Trusted by thousands of customers"

@@ -2,6 +2,7 @@ import React from "react";
 import banner from "@/public/images/banner3.png";
 import TestimonialCarousel from "./Testimonials";
 import Feature from "./Feature";
+import Link from "next/link";
 
 function Home() {
 	return (
@@ -20,12 +21,16 @@ function Home() {
 						powder. Perfect for cooking, seasoning, and more!
 					</p>
 					<div className="flex space-x-4">
-						<button className="px-6 py-3 bg-red-600 text-white rounded-md shadow-md hover:bg-red-700">
-							Shop Now
-						</button>
-						<button className="px-6 py-3 bg-gray-200 text-gray-700 rounded-md shadow-md hover:bg-gray-300">
-							Learn More
-						</button>
+						<Link href={"./products"}>
+							<button className="px-6 py-3 bg-red-600 text-white rounded-md shadow-md hover:bg-red-700">
+								Shop Now
+							</button>
+						</Link>
+						<Link href={"./about_us"}>
+							<button className="px-6 py-3 bg-gray-200 text-gray-700 rounded-md shadow-md hover:bg-gray-300">
+								Learn More
+							</button>
+						</Link>
 					</div>
 				</div>
 			</div>
