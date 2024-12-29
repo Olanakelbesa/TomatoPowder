@@ -2,15 +2,18 @@
 
 import React from "react";
 import { useRouter } from "next/navigation"; // Client-side navigation
-import { useDispatch } from "react-redux"; // Redux dispatch
-import { addToCart } from "@/redux/features/cartSlice";
 import { products } from "@/utils/products";
 import Image from "next/image";
 import { Product } from "@/types";
 
-const ProductDetail = ({ params }: { params: { id: string } }) => {
+interface ProductDetailProps {
+	params: { id: string };
+}
+
+const ProductDetail: React.FC<ProductDetailProps> = ({
+	params,
+}: ProductDetailProps) => {
 	const { id } = params; // Extract product ID from route params
-	const dispatch = useDispatch();
 	const router = useRouter();
 
 	// Find the product matching the ID
@@ -24,7 +27,6 @@ const ProductDetail = ({ params }: { params: { id: string } }) => {
 
 	// Add product to cart and navigate to shop page
 	const handleAddToCart = () => {
-		dispatch(addToCart(product));
 		router.push("/shop"); // Navigate to the shop page
 	};
 

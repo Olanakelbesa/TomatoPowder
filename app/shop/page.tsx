@@ -1,19 +1,18 @@
 "use client";
 
 import React, { useState } from "react";
-import { useCart } from "@/context/cartContext";
+import { useCart } from "@/context/cartContext"; // Assuming you have a cart context to manage the cart state
+import Link from "next/link";
 
 const ShopPage = () => {
 	const { cart, removeFromCart } = useCart(); // Add removeFromCart function
-	const [isConfirming, setIsConfirming] = useState<string | null>(null); // Track which product is being confirmed (use string if index is string)
+	const [isConfirming, setIsConfirming] = useState<string | null>(null); // Track which product is being confirmed
 
 	const handleDeleteClick = (id: string) => {
-		// Pass the id as string
 		setIsConfirming(id); // Show confirmation dialog for this item
 	};
 
 	const confirmDelete = (id: string) => {
-		// Use the id as string
 		removeFromCart(id); // Remove the item from the cart
 		setIsConfirming(null); // Reset confirmation state
 	};
@@ -26,7 +25,7 @@ const ShopPage = () => {
 		<div className="px-8 py-12">
 			<h1 className="text-4xl font-bold text-center mb-8">Your Cart</h1>
 			{cart.length === 0 ? (
-				<p>Your cart is empty.</p>
+				<p className="text-center text-lg text-gray-500">Your cart is empty.</p>
 			) : (
 				<div className="space-y-4">
 					{cart.map((product) => (
@@ -67,6 +66,18 @@ const ShopPage = () => {
 					))}
 				</div>
 			)}
+
+			{/* Checkout Button */}
+			<div className="mt-8 text-center">
+				<Link href={"./checkout"}>
+					<button
+						className="px-8 py-3 bg-red-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-red-700 transition-transform transform hover:scale-105"
+						disabled={cart.length === 0} // Disable button if cart is empty
+					>
+						Proceed to Checkout
+					</button>
+				</Link>
+			</div>
 		</div>
 	);
 };
