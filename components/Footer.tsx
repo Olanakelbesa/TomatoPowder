@@ -6,40 +6,65 @@ import Link from "next/link";
 function Footer() {
 	return (
 		<div>
-			<div className="bg-[#fef8f8] flex justify-evenly h-[30vh]">
-				<div className="flex flex-col justify-center text-gray-500 text-sm ">
-					<Image
-						src={logo}
-						alt="logo"
-						width={100}
-						height={100}
-						className=""
-					/>
+			<div className="bg-[#fef8f8] flex justify-evenly h-[30vh] flex-wrap">
+				{/* Logo and copyright section */}
+				<div className="flex flex-col justify-center text-gray-500 text-xs sm:text-sm md:text-base">
+					<Image src={logo} alt="logo" width={100} height={100} className="" />
 					<div className="py-4">
 						<p>&copy; 2024 TomatoPowder, Inc.</p>
 						<p>All rights reserved.</p>
 					</div>
 				</div>
-				<div className="flex flex-col gap-2 py-7 text-gray-500 text-sm">
-					<p className="font-bold text-base">Company</p>
-					<Link href={"./"}>About Us</Link>
-					<Link href={"./"}>Our Mission</Link>
-					<Link href={"./"}>News</Link>
-					<Link href={"./"}>Careers</Link>
+
+				{/* Company section */}
+				<div className="flex flex-col gap-2 py-7 text-gray-500 text-xs sm:text-sm md:text-base">
+					<p className="font-bold text-xs sm:text-sm md:text-base">Company</p>
+					<Link href={"./"} className="text-xs sm:text-sm md:text-base">
+						About Us
+					</Link>
+					<Link href={"./"} className="text-xs sm:text-sm md:text-base">
+						Our Mission
+					</Link>
+					<Link href={"./"} className="text-xs sm:text-sm md:text-base">
+						News
+					</Link>
+					<Link href={"./"} className="text-xs sm:text-sm md:text-base">
+						Careers
+					</Link>
 				</div>
-				<div className="flex flex-col gap-2 py-7 text-gray-500 text-sm">
-					<p className="font-bold text-base">Resources</p>
-					<Link href={"./"}>FAQs</Link>
-					<Link href={"./"}>Guides</Link>
-					<Link href={"./"}>Recipes</Link>
-					<Link href={"./"}>Support</Link>
+
+				{/* Resources section */}
+				<div className="flex flex-col gap-2 py-7 text-gray-500 text-xs sm:text-sm md:text-base">
+					<p className="font-bold text-xs sm:text-sm md:text-base">Resources</p>
+					<Link href={"./"} className="text-xs sm:text-sm md:text-base">
+						FAQs
+					</Link>
+					<Link href={"./"} className="text-xs sm:text-sm md:text-base">
+						Guides
+					</Link>
+					<Link href={"./"} className="text-xs sm:text-sm md:text-base">
+						Recipes
+					</Link>
+					<Link href={"./"} className="text-xs sm:text-sm md:text-base">
+						Support
+					</Link>
 				</div>
-				<div className="flex flex-col gap-2 py-7 text-gray-500 text-sm">
-					<p className="font-bold text-base">Connect</p>
-					<Link href={"./"}>Instagram</Link>
-					<Link href={"./"}>Facebook</Link>
-					<Link href={"./"}>Twitter</Link>
-					<Link href={"./"}>Pinterest</Link>
+
+				{/* Connect section */}
+				<div className="flex flex-col gap-2 py-7 text-gray-500 text-xs sm:text-sm md:text-base">
+					<p className="font-bold text-xs sm:text-sm md:text-base">Connect</p>
+					<Link href={"./"} className="text-xs sm:text-sm md:text-base">
+						Instagram
+					</Link>
+					<Link href={"./"} className="text-xs sm:text-sm md:text-base">
+						Facebook
+					</Link>
+					<Link href={"./"} className="text-xs sm:text-sm md:text-base">
+						Twitter
+					</Link>
+					<Link href={"./"} className="text-xs sm:text-sm md:text-base">
+						Pinterest
+					</Link>
 				</div>
 			</div>
 		</div>
