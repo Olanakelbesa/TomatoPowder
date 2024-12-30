@@ -63,7 +63,7 @@ const CheckoutPage = () => {
 						value={name}
 						onChange={(e) => setName(e.target.value)}
 						required
-						className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+						className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500"
 					/>
 				</div>
 
@@ -76,7 +76,7 @@ const CheckoutPage = () => {
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
 						required
-						className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+						className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500"
 					/>
 				</div>
 
@@ -88,7 +88,7 @@ const CheckoutPage = () => {
 						value={address}
 						onChange={(e) => setAddress(e.target.value)}
 						required
-						className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+						className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500"
 						rows={4}
 					/>
 				</div>
@@ -101,7 +101,7 @@ const CheckoutPage = () => {
 					<select
 						value={paymentMethod}
 						onChange={(e) => setPaymentMethod(e.target.value)}
-						className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+						className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500"
 					>
 						<option value="credit_card">Credit Card</option>
 						<option value="paypal">PayPal</option>
@@ -112,7 +112,7 @@ const CheckoutPage = () => {
 				<div className="mt-6">
 					<button
 						type="submit"
-						className="w-full py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
+						className="w-full py-3 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700 transition duration-300"
 						disabled={cart.length === 0}
 					>
 						Complete Purchase
