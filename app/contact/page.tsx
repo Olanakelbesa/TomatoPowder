@@ -86,11 +86,11 @@ const ContactPage = () => {
       <div className="flex justify-center space-x-12 mb-12">
         <div className="text-center">
           <h2 className="text-xl font-semibold text-red-700 mb-2">Phone</h2>
-          <p className="text-red-600">+1 (234) 567-890</p>
+          <p className="text-red-600">+251912121212</p>
         </div>
         <div className="text-center">
           <h2 className="text-xl font-semibold text-red-700 mb-2">Email</h2>
-          <p className="text-red-600">support@company.com</p>
+          <p className="text-red-600">gr15ietp@gmail.com</p>
         </div>
       </div>
 
